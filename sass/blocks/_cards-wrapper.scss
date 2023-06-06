@@ -1,0 +1,17 @@
+.cards-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  gap: 20px;
+}
+
+//Чтобы карточки не сжимались по ширинеБ если им не хватает места
+.cards-wrapper > * {
+  flex-shrink: 0;
+}
+
+.cards-wrapper + * {
+  margin-top: 30px;
+}
